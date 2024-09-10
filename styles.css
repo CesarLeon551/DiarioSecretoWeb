@@ -1,0 +1,105 @@
+/* Estilos globales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffe4e1; /* Rosa pálido */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #e91e63; /* Rosa vibrante */
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+p:hover {
+    color: #c2185b; /* Rosa oscuro */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el gatillo con corazones */
+#trigger {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #ff5722; /* Naranja intenso */
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#trigger p {
+    margin: 0;
+    color: #ff5722; /* Naranja intenso */
+    font-weight: bold;
+}
+
+/* Corazones en las esquinas */
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('https://www.flaticon.es/icono-gratis/corazones_16871082?term=heart&page=1&position=5&origin=search&related_id=16871082') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#top-left-heart {
+    top: -15px;
+    left: -15px;
+}
+
+#top-right-heart {
+    top: -15px;
+    right: -15px;
+}
+
+#bottom-left-heart {
+    bottom: -15px;
+    left: -15px;
+}
+
+#bottom-right-heart {
+    bottom: -15px;
+    right: -15px;
+}
+
+/* Sección oculta */
+#secret-zone {
+    display: none; /* Inicialmente oculta */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #ff5722; /* Naranja intenso */
+}
+
+#secret-zone.visible {
+    display: block; /* Mostrar cuando es visible */
+}
